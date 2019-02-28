@@ -19,9 +19,9 @@ function Get-It {
     param (
         [string]$something
     )
-     @{
+     [PSCustomObject]@{
         message = $something
-        anotherMessage = "$something and $something"
+        customMessage = "custom"
     }
 }
 
