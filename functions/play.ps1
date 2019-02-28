@@ -19,5 +19,10 @@ function Get-It {
     param (
         [string]$something
     )
-    
+     @{
+        message = $something
+        anotherMessage = "$something and $something"
+    }
 }
+
+Get-It -something "this is something"
